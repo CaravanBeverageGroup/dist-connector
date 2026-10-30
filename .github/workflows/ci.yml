@@ -12,7 +12,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Проверка публичной безопасности
-        run: ./scripts/check_public_safe.sh
+        run: bash ./scripts/check_public_safe.sh
       - name: gitleaks
         uses: gitleaks/gitleaks-action@v2
         env:
