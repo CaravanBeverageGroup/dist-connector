@@ -1,0 +1,46 @@
+# Секреты и ключи — никогда (публичный репозиторий!)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.priv
+signing_key*
+ed25519*
+secrets/
+# ПУБЛИЧНЫЕ ключи проверки подписи (*.pub в keys/) коммитить МОЖНО — их намеренно не игнорируем.
+
+# Локальное состояние, кеш и логи на VM
+state/
+config_cache/
+*.log
+logs/
+
+# Данные и выгрузки
+*.parquet
+*.csv
+*.xlsx
+*.bak
+data/
+tmp/
+
+# Локальные оверрайды
+docker-compose.override.yml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / ОС
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

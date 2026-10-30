@@ -1,0 +1,44 @@
+.git
+.gitignore
+.dockerignore
+.github
+
+# Секреты и ключи (публичные *.pub в keys/ в образ ДОЛЖНЫ попасть — их не исключаем)
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.pfx
+*.p12
+*.priv
+signing_key*
+ed25519*
+secrets/
+
+# Не нужно в образе
+deploy/
+scripts/
+README.md
+tests/
+docs/
+
+# Состояние, данные, мусор
+state/
+config_cache/
+*.log
+logs/
+*.parquet
+*.csv
+*.xlsx
+*.bak
+data/
+tmp/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+docker-compose.override.yml
